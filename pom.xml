@@ -130,12 +130,6 @@
             <version>10.23.1</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.github.kangarko</groupId>
-            <artifactId>ChatControl-Free</artifactId>
-            <version>5.9.5</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
