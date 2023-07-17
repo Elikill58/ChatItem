@@ -21,16 +21,10 @@ jobs:
         cache: maven
 
     - name: Build with Maven
-      run: mvn install --file pom.xml
+      run: mvn install
 
     - uses: actions/upload-artifact@v3
       name: Upload Artifact
       with:
         name: ChatItem.jar
         path: target/ChatItem-*.jar
-    - name: Send file README.md to discord channel
-      uses: sinshutu/upload-to-discord@master
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      with:
-        args: target/ChatItem-*.jar
